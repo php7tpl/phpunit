@@ -2,24 +2,22 @@
 
 namespace Tests\Unit;
 
+use App\Math;
 use PHPUnit\Framework\TestCase;
 
 class DefaultTest extends TestCase
 {
 
-    public function testIndex()
+    public function testSum()
     {
-        $this->assertEquals(1, 1);
+        $actual = Math::sum(1, 2);
+        $this->assertEquals(3, $actual);
     }
 	
-	public function testIndex2()
+	public function testPow()
     {
-        $this->assertEquals(1, 1);
-    }
-	
-	public function testIndex3()
-    {
-        $this->assertEquals(1, 1);
+        $actual = Math::pow(2, 8);
+        $this->assertEquals(256, $actual);
     }
 
 }
