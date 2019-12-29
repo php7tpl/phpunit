@@ -5,7 +5,7 @@ namespace Tests\Unit;
 use App\Math;
 use PHPUnit\Framework\TestCase;
 
-class DefaultTest extends TestCase
+class MathTest extends TestCase
 {
 
     public function testSum()
